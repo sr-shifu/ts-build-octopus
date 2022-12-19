@@ -1,6 +1,6 @@
 const maxLimit = 1_000_000;
-let n1 = 0,
-  n2 = 1,
+let n1 = BigInt(0),
+  n2 = BigInt(1),
   iteration = 0;
 console.log("Starting fibonacci worker");
 console.time("fibonacci");
