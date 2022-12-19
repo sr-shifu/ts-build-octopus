@@ -1,6 +1,6 @@
 {
   "name": "ts-build-octopus",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,14 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
+  },
+  "exports": {
+    "./*": {
+      "types": "./types/*.d.ts",
+      "require": "./cjs/*.js",
+      "import": "./esm/*.js",
+      "default": "./esm/*.js"
+    }
   },
   "keywords": [],
   "author": "",
