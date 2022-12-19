@@ -1,0 +1,21 @@
+{
+  "name": "esm-consumer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sr-shifu/ts-build-octopus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-build-octopus": "^1.1.0"
+  }
+}
