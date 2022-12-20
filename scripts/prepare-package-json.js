@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const { exit } = require("process");
 
 const buildDir = "./build";
 function createEsmModulePackageJson() {
@@ -27,13 +26,4 @@ function createEsmModulePackageJson() {
   });
 }
 
-function copyMainPackageJson() {
-  fs.copyFile("package.json", path.join(buildDir, "package.json"), (err) => {
-    if (err) {
-      throw err;
-    }
-  });
-}
-
 createEsmModulePackageJson();
-copyMainPackageJson();
